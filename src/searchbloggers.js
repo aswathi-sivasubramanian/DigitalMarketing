@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const channels = [
   {
     id: 1,
@@ -86,30 +87,60 @@ const channels = [
   },
 ];
 console.log(channels);
-import React from "react";
-import "./App.css";
-
-const App = ({ cards }) => (
-    <React.Fragment>
-        {cards.map(({ title, subtitle }, index) => (
-            <div className="card" key={index}>
-                 id: 1,
-    channelName: "PewDiePie",
-    youtubeLink: "https://www.youtube.com/user/PewDiePie",
-    numOfViews: 8000000,
-    numOfSubscribers: 110000000,
-                <span>{title}</span>
-                <br />
-                <span>{subtitle}</span>
-                <br />
-            </div>
-        ))}
-    </React.Fragment>
-)
-
-export default App;
-const Searchbloggers = () => {
-  return <div>Searchbloggers</div>;
+const searchbloggers = () => {
+  return (
+    <div className="card-list">
+      {channels.map((item) => (
+        <div className="card" key={item.id}>
+          <p>{item.id}</p>
+          <p>
+            <span className="bold">ChannelName:</span>
+            {item.channelName}
+          </p>
+          <a href={item.youtubeLink}>Youtube Link</a>
+          <span>
+            {" "}
+            <span className="bold">ViewCount:</span>
+            {item.numOfViews}
+          </span>
+          <span>
+            {" "}
+            <span className="bold">SubscribersCount:</span>
+            {item.numOfSubscribers}
+          </span>
+          <button>Book Now</button>
+        </div>
+      ))}
+    </div>
+  );
 };
+export default searchbloggers;
 
-export default Searchbloggers;
+// import React from "react";
+// // import React from "react";
+// // import "./App.css";
+
+// // const App = ({ cards }) => (
+// //     <React.Fragment>
+// //         {cards.map(({ title, subtitle }, index) => (
+// //             <div className="card" key={index}>
+// //                  id: 1,
+// //     channelName: "PewDiePie",
+// //     youtubeLink: "https://www.youtube.com/user/PewDiePie",
+// //     numOfViews: 8000000,
+// //     numOfSubscribers: 110000000,
+// //                 <span>{title}</span>
+// //                 <br />
+// //                 <span>{subtitle}</span>
+// //                 <br />
+// //             </div>
+// //         ))}
+// //     </React.Fragment>
+// // )
+
+// // export default App;
+// // const Searchbloggers = () => {
+// //   return <div>Searchbloggers</div>;
+// // };
+
+// // export default Searchbloggers;

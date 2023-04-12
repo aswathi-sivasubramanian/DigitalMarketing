@@ -1,22 +1,3 @@
-// // import logo from "./logo.svg";
-// import { Link, Outlet } from "react-router-dom";
-// import "./App.css";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Link to="/">Home</Link>
-//       <Link to="about">About</Link>
-//       <Link to="search">Search Bloggers</Link>
-//       <Link to="review">Review</Link>
-//       <Link to=""> </Link>
-//       <h1>Hi</h1>
-//       <Outlet />
-//     </div>
-//   );
-// }
-
-// export default App;
 import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 
@@ -25,7 +6,7 @@ function App() {
     <div className="container">
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          Logo
+          Ad-One
         </Link>
         <ul className="navbar-menu">
           <li className="navbar-item">
@@ -57,3 +38,22 @@ function App() {
 }
 
 export default App;
+// // import logo from "./logo.svg";
+// import { Link, Outlet } from "react-router-dom";
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Link to="/">Home</Link>
+//       <Link to="about">About</Link>
+//       <Link to="search">Search Bloggers</Link>
+//       <Link to="review">Review</Link>
+//       <Link to=""> </Link>
+//       <h1>Hi</h1>
+//       <Outlet />
+//     </div>
+//   );
+// }
+
+// export default App;
