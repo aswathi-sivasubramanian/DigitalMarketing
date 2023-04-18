@@ -7,6 +7,8 @@ import Reviews from "./reviews";
 import Searchbloggers from "./searchbloggers";
 
 import Start from "./start";
+import Login from "./Login";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: "review",
         element: <Reviews />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

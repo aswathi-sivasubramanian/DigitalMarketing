@@ -108,7 +108,7 @@ const searchbloggers = () => {
             <span className="bold">SubscribersCount:</span>
             {item.numOfSubscribers}
           </span>
-          <button>Book Now</button>
+          <button className="cardbutton">Book Now</button>
         </div>
       ))}
     </div>
@@ -144,3 +144,4 @@ export default searchbloggers;
 // // };
 
 // // export default Searchbloggers;
+//Temporarily store data here

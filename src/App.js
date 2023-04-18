@@ -3,35 +3,41 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      <nav className="navbar">
-        <Link to="/" className="navbar-logo">
-          Ad-One
-        </Link>
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <Link to="/" className="navbar-link">
-              Home
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/about" className="navbar-link">
-              About
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/search" className="navbar-link">
-              Search Bloggers
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/review" className="navbar-link">
-              Review
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <h1 className="title">Hi</h1>
+    <div>
+      <div className="container">
+        <nav className="navbar">
+          <Link to="start" className="navbar-logo">
+            Ad-One
+          </Link>
+          <ul className="navbar-menu">
+            <li className="navbar-item">
+              <Link to="start" className="navbar-link">
+                Home
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/about" className="navbar-link">
+                About
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/search" className="navbar-link">
+                Search Bloggers
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/review" className="navbar-link">
+                Review
+              </Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="login" className="navbar-link">
+                Login
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <Outlet />
     </div>
   );
